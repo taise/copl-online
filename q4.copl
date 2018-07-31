@@ -1,0 +1,5 @@
+// S(Z) plus S(S(S(Z))) is S(S(S(S(Z))))
+
+S(Z) plus S(S(S(Z))) is S(S(S(S(Z)))) by P-Succ {
+  Z plus S(S(S(Z))) is S(S(S(Z))) by P-Zero {};
+}
