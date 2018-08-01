@@ -1,5 +1,18 @@
 // S(Z) times S(Z) is S(Z) の導出
 
+// n1 = S(Z)
+// n2 = S(Z)
+// n3 = S(Z)
+// n4 = S(Z)
+//
+// T-Succ n1 times n2 is n3 && n2 plus n3 is n4
+// S(n1) times n2 is n4
+//
+// S(Z) times S(Z) is S(Z) by T-Succ {
+//   Z times S(Z) is Z by T-Zero {};
+//   Z plus Z is Z by P-Succ {};
+// }
+
 S(Z) times S(Z) is S(Z) by T-Succ {
   Z times S(Z) is Z by T-Zero {};
   S(Z) plus Z is S(Z) by P-Succ {

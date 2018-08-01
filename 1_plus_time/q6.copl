@@ -1,12 +1,15 @@
 // S(S(Z)) times Z is Z
 
-//WIP
+// S(n1) times n2 is n4 by T-Succ {
+//   n1 times n2 is n3 by T-Succ {};
+//   n2 plus n3 is n4 by P-Succ {};
+// }
+
 S(S(Z)) times Z is Z by T-Succ {
-  Z times S(Z) is Z by T-Zero {};
-  S(S(Z)) plus Z is S(S(Z)) by P-Succ {
-    S(Z) plus Z is S(Z) by P-Succ {
-      Z plus Z is Z by P-Zero {};
-    };
+  S(Z) times Z is Z by T-Succ {
+    Z times Z is Z by T-Zero {};
+    Z plus Z is Z by P-Zero {};
   };
+  Z plus Z is Z by P-Zero {};
 };
 
