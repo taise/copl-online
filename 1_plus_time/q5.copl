@@ -1,4 +1,5 @@
 // Z times S(S(Z)) is Z
 
+// Z times n is Z by T-Zero {};
 Z times S(S(Z)) is Z by T-Zero {};
 
